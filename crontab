@@ -1,0 +1,7 @@
+*/5 * * * * /bin/bash /home/user/merge_media.sh
+1-59/5 * * * * /bin/bash /home/user/sync_to_nas.sh
+0 * * * * find /var/lib/motioneye/Camera1 -name "*.thumb" -type f -delete
+0 1 * * * find /var/lib/motioneye_audio/ -type f -name "*.mp3" -mtime +1 -delete
+0 1 * * * find /var/lib/motioneye_audio/ -mindepth 1 -type d -mtime +1 -exec rm -rf {} +
+0 1 * * * find /var/lib/Mvideos/ -mindepth 1 -type d -mtime +1 -exec rm -rf {} +
+1 0 * * * /usr/bin/pkill -9 -f ffmpeg && /bin/bash /home/user/record_audio.sh > /dev/null 2>&1 &
