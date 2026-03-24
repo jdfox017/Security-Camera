@@ -3,4 +3,4 @@ Webcam security camera that uses Motioneye for video and ffmpeg for audio, and t
 
 Watch the youtube video that I made that explains my process
 
-[![Watch the video](https://img.youtube.com/vi/McHs4_LenRM/maxresdefault.jpg)](https://youtu.be/McHs4_LenRM)
+[![Watch the video](https://img.youtube.com/vi/McHs4_LenRM/0.jpg)](https://youtu.be/McHs4_LenRM)
